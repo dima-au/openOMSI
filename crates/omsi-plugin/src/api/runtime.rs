@@ -80,7 +80,7 @@ pub struct Hub {
     pub process_grants: std::sync::Arc<super::process::ProcessGrants>,
     pub process_permissions: Option<std::sync::Arc<super::process::ProcessPermissions>>,
     /// The cables the plugins lay in the world (`omsi.cable`), for the game to draw.
-    pub cables: RefCell<crate::cables::Cables>,
+    pub cables: RefCell<super::cables::Cables>,
     pub mail: RefCell<Vec<Mail>>,
     /// The loaded plugins' names, in load order.
     pub names: RefCell<Vec<String>>,

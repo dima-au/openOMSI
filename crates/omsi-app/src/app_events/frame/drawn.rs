@@ -44,6 +44,6 @@ impl App {
 }
 
 /// A plugin's cable as the scene draws it.
-fn scene_cable(c: omsi_plugin::cables::Cable) -> omsi_scene::plugin_cables::Cable {
-    omsi_scene::plugin_cables::Cable { on_bus: c.frame == omsi_plugin::cables::CableFrame::Bus, points: c.points, radius: c.radius, color: c.color }
+fn scene_cable(c: omsi_plugin::api::cables::Cable) -> omsi_scene::plugin_cables::Cable {
+    omsi_scene::plugin_cables::Cable { on_bus: c.frame == omsi_plugin::api::cables::CableFrame::Bus, points: c.points, radius: c.radius, color: c.color }
 }

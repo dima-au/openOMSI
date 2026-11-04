@@ -1,9 +1,9 @@
 //! `cable.*`: lines a plugin lays in the 3D world - overhead wires, ropes - drawn as thin
-//! round tubes, lit and shaded as the scene round them (see `crate::cables`).
+//! round tubes, lit and shaded as the scene round them (see `crate::api::cables`).
 
 use super::{def, o, p};
 use crate::api::{ApiError, ApiFn, Value};
-use crate::cables::{Cable, CableFrame, MAX_POINTS};
+use crate::api::cables::{Cable, CableFrame, MAX_POINTS};
 
 const NEW: &str = crate::api::VERSION;
 
