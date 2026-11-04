@@ -49,6 +49,7 @@
 
 pub mod api;
 pub mod data;
+pub mod cables;
 pub mod io;
 pub mod lua;
 pub mod ui;
